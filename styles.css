@@ -1,0 +1,21 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+[hidden] { display: none !important; }
+body { font-family: Arial, sans-serif; background: #141414; color: #fff; }
+.top { position: sticky; top: 0; z-index: 5; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 24px; padding: 12px 4%; background: #000; }
+.logo { color: #e50914; font-size: 1.5rem; letter-spacing: 1px; }
+.logo span { color: #fff; }
+nav { display: flex; flex: 1; flex-wrap: wrap; gap: 6px; }
+.nav-btn, .cat { background: none; border: 0; color: #ccc; cursor: pointer; font-size: .95rem; padding: 6px 12px; border-radius: 4px; }
+.nav-btn:hover, .nav-btn.active { background: #333; color: #fff; }
+#search { width: 220px; max-width: 100%; padding: 8px 12px; border: 1px solid #555; border-radius: 4px; background: #222; color: #fff; }
+.hero { padding: 60px 4%; background: linear-gradient(90deg, #000 15%, transparent), linear-gradient(135deg, #8b0000, #141414); }
+.hero h2 { font-size: 2rem; margin-bottom: 8px; }
+.hero p { color: #bbb; }
+.cats { display: flex; gap: 8px; padding: 16px 4% 0; overflow-x: auto; }
+.cat { border: 1px solid #555; white-space: nowrap; }
+.cat:hover, .cat.active { background: #e50914; border-color: #e50914; color: #fff; }
+main { padding: 16px 4% 40px; }
+h3 { margin-bottom: 12px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 16px; }
+.card { position: relative; background: #222; border-radius: 6px; overflow: hidden; cursor: pointer; transition: transform .2s; }
+.card:hover { transform: scale(1.04); }
